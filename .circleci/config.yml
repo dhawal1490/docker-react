@@ -2,7 +2,7 @@ version: 2
 jobs:
   build:
     environment:
-      IMAGE_NAME: dhawal1490/building-on-ci
+      IMAGE_NAME: dhawal1490/frontend
     docker:
       - image: circleci/buildpack-deps:stretch
     steps:
