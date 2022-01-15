@@ -1,5 +1,5 @@
 jobs:
-  build_docker_image:
+  build:
     docker:
       - image: cimg/node:14.0.0
     steps:
@@ -12,4 +12,4 @@ jobs:
 workflows:
   build_and_test:
     jobs:
-      - build_docker_image
+      - build
