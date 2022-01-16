@@ -2,9 +2,8 @@ version: 2
 jobs:
   build:
     environment:
-      IMAGE_NAME: dhawal1490/frontend
-    docker:
-      - image: circleci/buildpack-deps:stretch
+     docker:
+      - image: cimg/node:16.0.0
     steps:
       - checkout
       - setup_remote_docker
