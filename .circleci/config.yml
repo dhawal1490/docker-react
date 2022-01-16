@@ -1,7 +1,7 @@
 version: 2
 jobs:
   build:
-     docker:
+    docker:
       - image: dhawal1490/frontend
     steps:
       - checkout
