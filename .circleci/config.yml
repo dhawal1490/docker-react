@@ -3,6 +3,9 @@ jobs:
   build:
     docker:
       - image: dhawal1490/frontend
+          auth:
+            username: dhawal1490  # can specify string literal values
+            password: $DOCKERHUB_PASSWORD
     steps:
       - checkout
       - run: nginx
