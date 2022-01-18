@@ -7,4 +7,5 @@ jobs:
           username: dhawal1490
           password: $DOCKERHUB_PASSWORD
     steps:
-      - run: ls -R ../circleci-dockerfiles
+      - checkout
+      - run: echo "this is the build job"
