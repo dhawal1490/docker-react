@@ -6,4 +6,5 @@ jobs:
         auth:
           username: dhawal1490
           password: $DOCKERHUB_PASSWORD
+    steps:
       - run: ls -R ../circleci-dockerfiles
