@@ -6,9 +6,4 @@ jobs:
         auth:
           username: dhawal1490
           password: $DOCKERHUB_PASSWORD
-    steps:
-      - checkout
-      - run: nginx
-      - run: nginx -v
-      - run: curl localhost:80 | grp "Thank you for using nginx"
       - run: ls -R ../circleci-dockerfiles
