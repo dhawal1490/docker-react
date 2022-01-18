@@ -2,7 +2,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: dhawal1490/frontend
+      - image: dhawal1490/frontend:v1
         auth:
           username: dhawal1490
           password: $DOCKERHUB_PASSWORD
