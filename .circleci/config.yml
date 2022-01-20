@@ -1,14 +1,23 @@
-version: 2
-executor:
-  nodejs:
+version: 2.1
+executors:
+  my-custom-executor:
     docker:
       - image: cimg/node:14.17.0
+        auth:
+          # ensure you have first added these secrets
+          # visit app.circleci.com/settings/project/github/dhawal1490/docker-react/environment-variables
+          username: "dhawal1490"
+          password: "Gunman123#"
 jobs:
-  build:
-    executor: nodejs
-    working_directory: ~/docker-react
+  my-job-name:
+
+    executor: my-custom-executor
     steps:
       - checkout
-      - run: 
-          name: Echo
-          command: echo "this is the"
+      - run: |
+          # echo Hello, World!
+
+workflows:
+  my-custom-workflow:
+    jobs:
+      - my-job-name
