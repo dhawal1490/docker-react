@@ -1,10 +1,11 @@
 version: 2
 executor:
-  docker:
-    - image: dhawal1490/frontend:v2
-      auth:
-        username: dhawal1490
-        password: $DOCKERHUB_PASSWORD  
+  nodejs:
+    docker:
+      - image: dhawal1490/frontend:v2
+        auth:
+          username: dhawal1490
+          password: $DOCKERHUB_PASSWORD  
 jobs:
   build:
     executor: docker
