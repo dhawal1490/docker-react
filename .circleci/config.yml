@@ -7,4 +7,4 @@ jobs:
           username: dhawal1490
           password: $DOCKERHUB_PASSWORD
     steps:
-      - run: echo "this is the build job"
+      - run: echo "this is the build"
