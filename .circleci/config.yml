@@ -1,10 +1,17 @@
 version: 2
-jobs:
-  build:
+executor:
+  nodejs:
     docker:
       - image: dhawal1490/frontend:v2
         auth:
           username: dhawal1490
-          password: $DOCKERHUB_PASSWORD
+          password: $DOCKERHUB_PASSWORD  
+jobs:
+  tests:
+    executor: nodejs
+    working_directory: ~docker-react
     steps:
-      - run: echo "this is the build"
+      - checkout
+      - run: 
+          name: Echo
+          command: echo "this is the"
