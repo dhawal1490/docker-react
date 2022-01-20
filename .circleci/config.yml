@@ -2,7 +2,7 @@ version: 2.1
 executors:
   nodejs:
     docker:
-      - image: cimg/dhawal1490/frontend:v2
+      - image: dhawal1490/frontend:v2
         auth:
           # ensure you have first added these secrets
           # visit app.circleci.com/settings/project/github/dhawal1490/docker-react/environment-variables
