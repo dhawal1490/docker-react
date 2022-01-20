@@ -2,13 +2,10 @@ version: 2
 executor:
   nodejs:
     docker:
-      - image: dhawal1490/frontend:v2
-        auth:
-          username: dhawal1490
-          password: $DOCKERHUB_PASSWORD  
+      - image: cimg/node:14.17.0
 jobs:
   build:
-    executor: docker
+    executor: nodejs
     working_directory: ~/docker-react
     steps:
       - checkout
