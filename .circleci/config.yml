@@ -7,9 +7,9 @@ executor:
           username: dhawal1490
           password: $DOCKERHUB_PASSWORD  
 jobs:
-  tests:
+  build:
     executor: nodejs
-    working_directory: ~docker-react
+    working_directory: ~/docker-react
     steps:
       - checkout
       - run: 
