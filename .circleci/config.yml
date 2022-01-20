@@ -15,7 +15,8 @@ jobs:
       - checkout
       - run: |
           ls
-          cd docker-react
+          npm install
+          npm run build
 
 
 workflows:
